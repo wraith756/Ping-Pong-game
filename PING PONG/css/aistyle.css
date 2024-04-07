@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#gamebox
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+
+}
+
+#userscore,#aiscore{
+    color: rgb(255,255,255);
+    font-size: 3rem;
+    position: absolute;
+    top: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#userscore
+{
+    left: 40%;
+    
+}
+#aiscore
+{
+    right: 40%;
+}
+.dashlineverticle
+{
+    border: 1.5px dashed #fff;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: .9px;
+    height: 100%;
+    transform: translateX(-50%);
+}
+#userPeddle
+{
+    width: 20px;
+    background-color: #fff;
+    height: 100px;
+    position: absolute;
+    left: 5px;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+}
+
+#aiPeddle
+{
+    
+    width: 20px;
+    background-color: #d34444f1;
+    height: 100px;
+    position: absolute;
+    right: 5px;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+
+}
+#ball
+{
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #userscore, #aiscore {
+        font-size: 2rem;
+    }
+    #userPeddle, #aiPeddle {
+        width: 15px;
+        height: 80px;
+    }
+    #ball {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    #userscore, #aiscore {
+        font-size: 4rem;
+    }
+    #userPeddle, #aiPeddle {
+        width: 25px;
+        height: 120px;
+    }
+    #ball {
+        width: 25px;
+        height: 25px;
+    }
+}
